@@ -1,14 +1,20 @@
-#Prompt 4 declares a class describing my favorite animal
 
-class Turtle:
-	#data members
-	def __init__(self, arm_length, leg_length, eyes, tail, furry):
-		self.arm_length = arm_length
-		self.leg_length = arm_length
-		self.eyes = eyes
-		self.tail = tail
-		self.furry = furry
+x = 10
+y = 5
 
-	def physical_parameters(self):
-		print("My favorite animal is a turtle \nand these are its physical parameters")
-		print(f"Arm length = ")
+class Animal:
+    def __init__(self, arm_length="3 feet", leg_length="1.3 feet", num_eyes="2", has_tail="true", is_furry="false"):
+        self.length = arm_length
+        self.length = leg_length
+        self.eyes = num_eyes
+
+    def describe(self):
+        print("Physical Description of a Turtle:")
+        print(f"A turtle's flippers are about {self.length} long")
+        print(f"A turtle's hind flippers are about {self.length} long")
+        print(f"A turtle has {self.eyes} eyes")
+        print(f"A turtle has a tail:{bool(x < y)} ")
+        print(f"A turtle is furry:{bool(x == y)} ")
+
+A = Animal('Turtle')
+print(A.describe())
